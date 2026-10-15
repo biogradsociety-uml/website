@@ -72,6 +72,16 @@ input, select, textarea {
 	appearance: none;
 }
 
+/* Logo */
+
+.logo {
+            /* Set the full width of its parent container */
+          	width: 100%;
+            
+          	/* Maintains aspect ratio */
+            height: auto;
+        }
+
 /* Basic */
 
 	@-ms-viewport {
