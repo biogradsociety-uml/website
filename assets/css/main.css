@@ -75,12 +75,11 @@ input, select, textarea {
 /* Logo */
 
 .logo {
-            /* Set the full width of its parent container */
-          	width: 100%;
-            
-          	/* Maintains aspect ratio */
-            height: auto;
-        }
+        width: 100vw;
+    	height: 100vh;
+   	 	object-fit: contain;
+    	display: block;
+	}
 
 /* Basic */
 
