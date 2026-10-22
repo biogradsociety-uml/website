@@ -74,12 +74,51 @@ input, select, textarea {
 
 /* Logo */
 
-.logo {
-        width: 100vw;
-    	height: 100vh;
-   	 	object-fit: contain;
-    	display: block;
-	}
+.outer-div {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  /* Now create left/right margins */
+  margin: 0 0.5em;
+}
+
+.inner-fixed-div {
+  outline: 4px dotted blue;
+  outline-offset: -2px;
+}
+
+.inner-remaining-div {
+  outline: 4px dotted yellow;
+  outline-offset: -4px;
+  
+  /* text-align: center; */
+  flex-grow: 1;
+  
+  /* hints the contents to not overflow */
+  overflow: hidden;
+}
+
+.picture-div {
+  outline: 4px dashed lime;
+  outline-offset: -4px;
+  
+  /* force the div to fill the available space */
+  width: 100%;
+  height: 100%;
+}
+
+.picture-div-img {
+  outline: 4px dotted purple;
+  outline-offset: -4px;
+  
+  /* force the image to stay true to its proportions */
+  width: 100%;
+  height: 100%;
+  
+  /* and force it to behave like needed */
+  object-fit: scale-down;
+  object-position: top;
+}
 
 /* Basic */
 
